@@ -15,7 +15,7 @@ html
     ul
       each user, i in youRead
         li
-          a(href='http://www.diary.ru/member/?'+user.memberID target='_blank') #{user.name}
+          a(href=user.url target='_blank') #{user.name}
 
     h2 Followers you don't follow (#{youDontRead.length})
     ul

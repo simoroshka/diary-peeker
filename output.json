@@ -1811,10 +1811,6 @@
             "mutual": true
         },
         {
-            "name": "_Minko_",
-            "url": "http://MinkoL.diary.ru"
-        },
-        {
             "name": "adayinmylife",
             "url": "http://adiml.diary.ru"
         },
@@ -1900,17 +1896,9 @@
             "url": "http://doctorshto.diary.ru"
         },
         {
-            "name": "DrunkKimpab",
-            "url": "http://drunkkimpab.diary.ru"
-        },
-        {
             "name": "Elein Sorrow",
             "url": "http://elein-sorrow.diary.ru",
             "mutual": true
-        },
-        {
-            "name": "Eleonore Magilinon",
-            "url": "http://Eleonore.diary.ru"
         },
         {
             "name": "Engifar",
@@ -1943,17 +1931,9 @@
             "mutual": true
         },
         {
-            "name": "goldy-trf",
-            "url": "http://goldy-trf.diary.ru"
-        },
-        {
             "name": "GoodFay",
             "url": "http://goodfay.diary.ru",
             "mutual": true
-        },
-        {
-            "name": "Hastic",
-            "url": "http://hastic.diary.ru"
         },
         {
             "name": "Hijack",
@@ -1987,14 +1967,6 @@
             "url": "http://jazzzzman.diary.ru"
         },
         {
-            "name": "katrindepp",
-            "url": "http://vincentdoor.diary.ru"
-        },
-        {
-            "name": "Kwils",
-            "url": "http://sign.diary.ru"
-        },
-        {
             "name": "La fantaisiste",
             "url": "http://paints.diary.ru",
             "mutual": true
@@ -2003,10 +1975,6 @@
             "name": "leramankovich",
             "url": "http://leramankovich.diary.ru",
             "mutual": true
-        },
-        {
-            "name": "Leroks",
-            "url": "http://eternal-bolvan.diary.ru"
         },
         {
             "name": "lisbethK",
@@ -2083,10 +2051,6 @@
             "name": "Nightmary17",
             "url": "http://Nightmary17.diary.ru",
             "mutual": true
-        },
-        {
-            "name": "of Brian Tracy",
-            "url": "http://dreamwithoutfear.diary.ru"
         },
         {
             "name": "OhMyGau",
@@ -2178,10 +2142,6 @@
             "url": "http://ten-nil.diary.ru"
         },
         {
-            "name": "the only one in the world",
-            "url": "http://LilyPotter.diary.ru"
-        },
-        {
             "name": "TheHappyEnd",
             "url": "http://lunar-republic.diary.ru",
             "mutual": true
@@ -2208,10 +2168,6 @@
             "name": "Viel_AsIs",
             "url": "http://VielAsIs.diary.ru",
             "mutual": true
-        },
-        {
-            "name": "warrior_warrior",
-            "url": "http://warrior2013.diary.ru"
         },
         {
             "name": "WatercolourArt",
@@ -2293,10 +2249,6 @@
         {
             "name": "Видеоманьяк",
             "url": "http://makingvideo.diary.ru"
-        },
-        {
-            "name": "Выше планки",
-            "url": "http://vyshe-planki.diary.ru"
         },
         {
             "name": "Голландская рулетка",
@@ -2444,10 +2396,6 @@
             "mutual": true
         },
         {
-            "name": "Цветущий розмарин",
-            "url": "http://sleeping-devil.diary.ru"
-        },
-        {
             "name": "человек и анекдот",
             "url": "http://oceanic-fruit.diary.ru",
             "mutual": true
@@ -2461,10 +2409,6 @@
             "name": "Шаман-прыгальщик",
             "url": "http://odd-alien.diary.ru",
             "mutual": true
-        },
-        {
-            "name": "Шаманьяк",
-            "url": "http://goodstorybro.diary.ru"
         },
         {
             "name": "Энтропия",
@@ -2485,10 +2429,6 @@
         {
             "name": "[Sakuragi_Luka]",
             "url": "http://Raven-chronicles.diary.ru"
-        },
-        {
-            "name": "_Minko_",
-            "url": "http://MinkoL.diary.ru"
         },
         {
             "name": "adayinmylife",
@@ -2531,22 +2471,6 @@
             "url": "http://doctorshto.diary.ru"
         },
         {
-            "name": "DrunkKimpab",
-            "url": "http://drunkkimpab.diary.ru"
-        },
-        {
-            "name": "Eleonore Magilinon",
-            "url": "http://Eleonore.diary.ru"
-        },
-        {
-            "name": "goldy-trf",
-            "url": "http://goldy-trf.diary.ru"
-        },
-        {
-            "name": "Hastic",
-            "url": "http://hastic.diary.ru"
-        },
-        {
             "name": "Hijack",
             "url": "http://deadpinkelefant.diary.ru"
         },
@@ -2563,18 +2487,6 @@
             "url": "http://jazzzzman.diary.ru"
         },
         {
-            "name": "katrindepp",
-            "url": "http://vincentdoor.diary.ru"
-        },
-        {
-            "name": "Kwils",
-            "url": "http://sign.diary.ru"
-        },
-        {
-            "name": "Leroks",
-            "url": "http://eternal-bolvan.diary.ru"
-        },
-        {
             "name": "Meethos",
             "url": "http://3400.diary.ru"
         },
@@ -2589,10 +2501,6 @@
         {
             "name": "NaNoWriMo",
             "url": "http://NaNoWriMo.diary.ru"
-        },
-        {
-            "name": "of Brian Tracy",
-            "url": "http://dreamwithoutfear.diary.ru"
         },
         {
             "name": "One my day",
@@ -2619,20 +2527,12 @@
             "url": "http://ten-nil.diary.ru"
         },
         {
-            "name": "the only one in the world",
-            "url": "http://LilyPotter.diary.ru"
-        },
-        {
             "name": "TriNitroTrololo",
             "url": "http://tntrololo.diary.ru"
         },
         {
             "name": "varia niamati",
             "url": "http://varianiamati.diary.ru"
-        },
-        {
-            "name": "warrior_warrior",
-            "url": "http://warrior2013.diary.ru"
         },
         {
             "name": "WatercolourArt",
@@ -2669,10 +2569,6 @@
         {
             "name": "Видеоманьяк",
             "url": "http://makingvideo.diary.ru"
-        },
-        {
-            "name": "Выше планки",
-            "url": "http://vyshe-planki.diary.ru"
         },
         {
             "name": "Голландская рулетка",
@@ -2733,14 +2629,6 @@
         {
             "name": "Типология: Кроме Людей",
             "url": "http://tipologija-kl.diary.ru"
-        },
-        {
-            "name": "Цветущий розмарин",
-            "url": "http://sleeping-devil.diary.ru"
-        },
-        {
-            "name": "Шаманьяк",
-            "url": "http://goodstorybro.diary.ru"
         }
     ],
     "youDontRead": [
