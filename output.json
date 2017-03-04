@@ -2477,7 +2477,7 @@
             "mutual": true
         }
     ],
-    "People who you follow but they don't follow you back": [
+    "youRead": [
         {
             "name": "@interview",
             "url": "http://diary-stars.diary.ru"
@@ -2743,7 +2743,7 @@
             "url": "http://goodstorybro.diary.ru"
         }
     ],
-    "People who follow you but you don't follow back": [
+    "youDontRead": [
         {
             "name": "* Lady Death *",
             "memberID": "656293",
@@ -4020,7 +4020,7 @@
             "isNew": 0
         }
     ],
-    "Mutual Friends": [
+    "mutualFriends": [
         {
             "name": "#improve",
             "memberID": "3318480",

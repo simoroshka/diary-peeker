@@ -70,12 +70,12 @@ function getUserData(id) {
       result = markMutualFriends(result);
 
       var mutualFriends = result.readers.filter(user => user.mutual);
-      var onlyYouRead = result.favorites.filter(user => !user.mutual);
+      var youRead = result.favorites.filter(user => !user.mutual);
       var youDontRead = result.readers.filter(user => !user.mutual);
 
-      result['People who you follow but they don\'t follow you back'] = onlyYouRead;
-      result['People who follow you but you don\'t follow back'] = youDontRead;
-      result['Mutual Friends'] = mutualFriends;
+      result['youRead'] = youRead;
+      result['youDontRead'] = youDontRead;
+      result['mutualFriends'] = mutualFriends;
 
       return result;
     }
@@ -86,16 +86,25 @@ function getUserData(id) {
       request({url: url, encoding: null}, function(error, response, html){
         if(!error){
           var translator = new Iconv('cp1251', 'utf-8');
-
           var result = processUserData(translator.convert(html));
           saveUserData(result);
+          res.render('index', {
+              username: "Simoroshka",
+              friends: result.mutualFriends,
+              youRead: result.youRead,
+              youDontRead: result.youDontRead,
+            });
+        } else {
+          res.send("There was a request error");
         }
-        res.send()
       })
     }
 }
 
 app.get('/', getUserData(466420));
+
+app.set('views', './views');
+app.set('view engine', 'pug');
 
 app.listen('8081')
 console.log('Magic happens on port 8081');

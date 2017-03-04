@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title My dear friends
+  body
+    h1 Hello #{username}!
+
+    h2 Your mutual friends (#{friends.length})
+    ul
+      each friend, i in friends
+        li
+          a(href='http://www.diary.ru/member/?'+friend.memberID target='_blank') #{friend.name}
+
+    h2 People you follow who don't follow you (#{youRead.length})
+    ul
+      each user, i in youRead
+        li
+          a(href='http://www.diary.ru/member/?'+user.memberID target='_blank') #{user.name}
+
+    h2 Followers you don't follow (#{youDontRead.length})
+    ul
+      each user, i in youDontRead
+        li
+          a(href='http://www.diary.ru/member/?'+user.memberID target='_blank') #{user.name}
