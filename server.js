@@ -92,7 +92,7 @@ function getUserData(id) {
     }
 }
 
-app.get('/scrape', getUserData(466420));
+app.get('/', getUserData(466420));
 
 app.listen('8081')
 console.log('Magic happens on port 8081');
