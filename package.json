@@ -1,12 +1,13 @@
 {
-  "name"         : "diary-peeker",
-  "version"      : "0.0.1",
-  "description"  : "Peek into meta data",
-  "main"         : "server.js",
-  "author"       : "Simoroshka",
-  "dependencies" : {
-    "express"    : "latest",
-    "request"    : "latest",
-    "cheerio"    : "latest"
+  "name": "diary-peeker",
+  "version": "0.0.1",
+  "description": "Peek into meta data",
+  "main": "server.js",
+  "author": "Simoroshka",
+  "dependencies": {
+    "cheerio": "latest",
+    "express": "latest",
+    "iconv": "^2.2.1",
+    "request": "latest"
   }
 }

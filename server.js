@@ -41,6 +41,20 @@ function getUserData(id) {
       })
     }
 
+    function markMutualFriends (data) {
+      data.readers.forEach(function(reader, index) {
+        var friend = data.favorites.find(function(fav){
+                        return reader.name === fav.name;}
+                     );
+        if (friend) {
+          reader.mutual = true;
+          friend.mutual = true;
+        }
+      });
+
+      return data;
+    }
+
     // get only our data and remove all DOM crap from cheerio
     function moveToArray (data) {
       var array = [];
@@ -50,12 +64,27 @@ function getUserData(id) {
       return array;
     }
 
+    function processUserData(html) {
+      var result = parseUserData(html);
+      result = markMutualFriends(result);
+
+      var mutualFriends = result.readers.filter(user => user.mutual);
+      var onlyYouRead = result.favorites.filter(user => !user.mutual);
+      var youDontRead = result.readers.filter(user => !user.mutual);
+
+      result['People who you follow but they don\'t follow you back'] = onlyYouRead;
+      result['People who follow you but you don\'t follow back'] = youDontRead;
+      result['Mutual Friends'] = mutualFriends;
+
+      return result;
+    }
+
     return function(req, res) {
       // Let's scrape
       url = 'http://www.diary.ru/member/?' + id + '&fullreaderslist&fullfavoriteslist#readerslist';
       request(url, function(error, response, html){
         if(!error){
-          var result = parseUserData(html);
+          var result = processUserData(html);
           saveUserData(result);
         }
         res.send('Check your console!')
