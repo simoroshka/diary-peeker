@@ -1,5 +1,5 @@
 {
-    "readers_fixed": [
+    "readers": [
         {
             "name": "#improve",
             "memberID": "3318480",
@@ -1701,7 +1701,7 @@
             "isNew": 0
         }
     ],
-    "favorites_fixed": [
+    "favorites": [
         {
             "name": "#improve",
             "url": "http://becoming-better.diary.ru"
