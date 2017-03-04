@@ -44,15 +44,12 @@ function getUserData(id) {
 
     function markMutualFriends (data) {
       data.readers.forEach(function(reader, index) {
-        var friend = data.favorites.find(function(fav){
-                        return reader.name === fav.name;}
-                     );
+        var friend = data.favorites.find(fav => reader.name === fav.name);
         if (friend) {
           reader.mutual = true;
           friend.mutual = true;
         }
       });
-
       return data;
     }
 
@@ -82,7 +79,7 @@ function getUserData(id) {
 
     return function(req, res) {
       // Let's scrape
-      url = 'http://www.diary.ru/member/?' + id + '&fullreaderslist&fullfavoriteslist#readerslist';
+      var url = 'http://www.diary.ru/member/?' + id + '&fullreaderslist&fullfavoriteslist';
       request({url: url, encoding: null}, function(error, response, html){
         if(!error){
           var translator = new Iconv('cp1251', 'utf-8');
