@@ -3,6 +3,7 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
+var Iconv = require('iconv').Iconv;
 
 function getUserData(id) {
 
@@ -82,12 +83,14 @@ function getUserData(id) {
     return function(req, res) {
       // Let's scrape
       url = 'http://www.diary.ru/member/?' + id + '&fullreaderslist&fullfavoriteslist#readerslist';
-      request(url, function(error, response, html){
+      request({url: url, encoding: null}, function(error, response, html){
         if(!error){
-          var result = processUserData(html);
+          var translator = new Iconv('cp1251', 'utf-8');
+
+          var result = processUserData(translator.convert(html));
           saveUserData(result);
         }
-        res.send('Check your console!')
+        res.send()
       })
     }
 }
